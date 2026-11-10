@@ -1,0 +1,922 @@
+{
+  "boxscore": {
+    "teams": [
+      {
+        "team": {
+          "id": "9",
+          "uid": "s:40~l:46~t:9",
+          "slug": "golden-state-warriors",
+          "location": "Golden State",
+          "name": "Warriors",
+          "abbreviation": "GS",
+          "displayName": "Golden State Warriors",
+          "shortDisplayName": "Warriors",
+          "color": "000000",
+          "alternateColor": "ffffff",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+        },
+        "statistics": [],
+        "homeAway": "away"
+      },
+      {
+        "team": {
+          "id": "13",
+          "uid": "s:40~l:46~t:13",
+          "slug": "los-angeles-lakers",
+          "location": "Los Angeles",
+          "name": "Lakers",
+          "abbreviation": "LAL",
+          "displayName": "Los Angeles Lakers",
+          "shortDisplayName": "Lakers",
+          "color": "000000",
+          "alternateColor": "ffffff",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+        },
+        "statistics": [],
+        "homeAway": "home"
+      }
+    ],
+    "players": [
+      {
+        "team": {
+          "id": "9",
+          "uid": "s:40~l:46~t:9",
+          "slug": "golden-state-warriors",
+          "location": "Golden State",
+          "name": "Warriors",
+          "abbreviation": "GS",
+          "displayName": "Golden State Warriors",
+          "shortDisplayName": "Warriors",
+          "color": "000000",
+          "alternateColor": "ffffff",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+        },
+        "statistics": [
+          {
+            "names": [
+              "MIN",
+              "PTS",
+              "FG",
+              "3PT",
+              "FT",
+              "REB",
+              "AST",
+              "TO",
+              "STL",
+              "BLK",
+              "OREB",
+              "DREB",
+              "PF",
+              "+/-"
+            ],
+            "keys": [
+              "minutes",
+              "points",
+              "fieldGoalsMade-fieldGoalsAttempted",
+              "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+              "freeThrowsMade-freeThrowsAttempted",
+              "rebounds",
+              "assists",
+              "turnovers",
+              "steals",
+              "blocks",
+              "offensiveRebounds",
+              "defensiveRebounds",
+              "fouls",
+              "plusMinus"
+            ],
+            "labels": [
+              "MIN",
+              "PTS",
+              "FG",
+              "3PT",
+              "FT",
+              "REB",
+              "AST",
+              "TO",
+              "STL",
+              "BLK",
+              "OREB",
+              "DREB",
+              "PF",
+              "+/-"
+            ],
+            "descriptions": [
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes"
+            ],
+            "athletes": [
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000301",
+                  "uid": "s:40~l:46~a:9000301",
+                  "guid": "guid-9000301",
+                  "displayName": "Cole Hargrove",
+                  "shortName": "C. Hargrove",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000301"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000301.png",
+                    "alt": "Cole Hargrove"
+                  },
+                  "jersey": "30",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "36",
+                  "29",
+                  "10-22",
+                  "6-13",
+                  "3-3",
+                  "4",
+                  "6",
+                  "3",
+                  "1",
+                  "0",
+                  "0",
+                  "4",
+                  "1",
+                  "-7"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000302",
+                  "uid": "s:40~l:46~a:9000302",
+                  "guid": "guid-9000302",
+                  "displayName": "Darius Webb",
+                  "shortName": "D. Webb",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000302"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000302.png",
+                    "alt": "Darius Webb"
+                  },
+                  "jersey": "22",
+                  "position": {
+                    "name": "Forward",
+                    "displayName": "Forward",
+                    "abbreviation": "F"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "34",
+                  "16",
+                  "6-13",
+                  "2-5",
+                  "2-2",
+                  "7",
+                  "3",
+                  "2",
+                  "2",
+                  "1",
+                  "1",
+                  "6",
+                  "3",
+                  "-10"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000303",
+                  "uid": "s:40~l:46~a:9000303",
+                  "guid": "guid-9000303",
+                  "displayName": "Omar Saleh",
+                  "shortName": "O. Saleh",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000303"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000303.png",
+                    "alt": "Omar Saleh"
+                  },
+                  "jersey": "5",
+                  "position": {
+                    "name": "Center",
+                    "displayName": "Center",
+                    "abbreviation": "C"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "28",
+                  "10",
+                  "4-7",
+                  "0-0",
+                  "2-4",
+                  "9",
+                  "2",
+                  "1",
+                  "0",
+                  "2",
+                  "3",
+                  "6",
+                  "4",
+                  "-6"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000304",
+                  "uid": "s:40~l:46~a:9000304",
+                  "guid": "guid-9000304",
+                  "displayName": "Trey Dalton",
+                  "shortName": "T. Dalton",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000304"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000304.png",
+                    "alt": "Trey Dalton"
+                  },
+                  "jersey": "3",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "31",
+                  "14",
+                  "5-12",
+                  "3-8",
+                  "1-2",
+                  "3",
+                  "4",
+                  "2",
+                  "1",
+                  "0",
+                  "0",
+                  "3",
+                  "2",
+                  "-4"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000305",
+                  "uid": "s:40~l:46~a:9000305",
+                  "guid": "guid-9000305",
+                  "displayName": "Finn Gallagher",
+                  "shortName": "F. Gallagher",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000305"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000305.png",
+                    "alt": "Finn Gallagher"
+                  },
+                  "jersey": "9",
+                  "position": {
+                    "name": "Forward",
+                    "displayName": "Forward",
+                    "abbreviation": "F"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "25",
+                  "5",
+                  "2-6",
+                  "1-4",
+                  "0-0",
+                  "4",
+                  "1",
+                  "0",
+                  "1",
+                  "0",
+                  "1",
+                  "3",
+                  "3",
+                  "-8"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000306",
+                  "uid": "s:40~l:46~a:9000306",
+                  "guid": "guid-9000306",
+                  "displayName": "Isaac Royce",
+                  "shortName": "I. Royce",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000306"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000306.png",
+                    "alt": "Isaac Royce"
+                  },
+                  "jersey": "0",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": false,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "20",
+                  "9",
+                  "3-8",
+                  "2-5",
+                  "1-1",
+                  "2",
+                  "2",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "2",
+                  "2",
+                  "0"
+                ]
+              }
+            ],
+            "totals": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        ],
+        "displayOrder": 1
+      },
+      {
+        "team": {
+          "id": "13",
+          "uid": "s:40~l:46~t:13",
+          "slug": "los-angeles-lakers",
+          "location": "Los Angeles",
+          "name": "Lakers",
+          "abbreviation": "LAL",
+          "displayName": "Los Angeles Lakers",
+          "shortDisplayName": "Lakers",
+          "color": "000000",
+          "alternateColor": "ffffff",
+          "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+        },
+        "statistics": [
+          {
+            "names": [
+              "MIN",
+              "PTS",
+              "FG",
+              "3PT",
+              "FT",
+              "REB",
+              "AST",
+              "TO",
+              "STL",
+              "BLK",
+              "OREB",
+              "DREB",
+              "PF",
+              "+/-"
+            ],
+            "keys": [
+              "minutes",
+              "points",
+              "fieldGoalsMade-fieldGoalsAttempted",
+              "threePointFieldGoalsMade-threePointFieldGoalsAttempted",
+              "freeThrowsMade-freeThrowsAttempted",
+              "rebounds",
+              "assists",
+              "turnovers",
+              "steals",
+              "blocks",
+              "offensiveRebounds",
+              "defensiveRebounds",
+              "fouls",
+              "plusMinus"
+            ],
+            "labels": [
+              "MIN",
+              "PTS",
+              "FG",
+              "3PT",
+              "FT",
+              "REB",
+              "AST",
+              "TO",
+              "STL",
+              "BLK",
+              "OREB",
+              "DREB",
+              "PF",
+              "+/-"
+            ],
+            "descriptions": [
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes",
+              "Minutes"
+            ],
+            "athletes": [
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000201",
+                  "uid": "s:40~l:46~a:9000201",
+                  "guid": "guid-9000201",
+                  "displayName": "Dominic Shaw",
+                  "shortName": "D. Shaw",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000201"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000201.png",
+                    "alt": "Dominic Shaw"
+                  },
+                  "jersey": "6",
+                  "position": {
+                    "name": "Forward",
+                    "displayName": "Forward",
+                    "abbreviation": "F"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "38",
+                  "33",
+                  "12-22",
+                  "2-6",
+                  "7-9",
+                  "10",
+                  "9",
+                  "4",
+                  "1",
+                  "1",
+                  "2",
+                  "8",
+                  "2",
+                  "+11"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000202",
+                  "uid": "s:40~l:46~a:9000202",
+                  "guid": "guid-9000202",
+                  "displayName": "Kofi Mensah",
+                  "shortName": "K. Mensah",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000202"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000202.png",
+                    "alt": "Kofi Mensah"
+                  },
+                  "jersey": "3",
+                  "position": {
+                    "name": "Center",
+                    "displayName": "Center",
+                    "abbreviation": "C"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "33",
+                  "22",
+                  "9-14",
+                  "0-0",
+                  "4-6",
+                  "13",
+                  "3",
+                  "2",
+                  "1",
+                  "3",
+                  "4",
+                  "9",
+                  "3",
+                  "+8"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000203",
+                  "uid": "s:40~l:46~a:9000203",
+                  "guid": "guid-9000203",
+                  "displayName": "Ryan Castellanos",
+                  "shortName": "R. Castellanos",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000203"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000203.png",
+                    "alt": "Ryan Castellanos"
+                  },
+                  "jersey": "15",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "35",
+                  "18",
+                  "6-15",
+                  "4-10",
+                  "2-2",
+                  "3",
+                  "5",
+                  "2",
+                  "1",
+                  "0",
+                  "0",
+                  "3",
+                  "2",
+                  "+6"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000204",
+                  "uid": "s:40~l:46~a:9000204",
+                  "guid": "guid-9000204",
+                  "displayName": "Ben Whitaker",
+                  "shortName": "B. Whitaker",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000204"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000204.png",
+                    "alt": "Ben Whitaker"
+                  },
+                  "jersey": "1",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "29",
+                  "10",
+                  "4-10",
+                  "2-6",
+                  "0-0",
+                  "2",
+                  "2",
+                  "0",
+                  "2",
+                  "0",
+                  "0",
+                  "2",
+                  "3",
+                  "+4"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000205",
+                  "uid": "s:40~l:46~a:9000205",
+                  "guid": "guid-9000205",
+                  "displayName": "Theo Langford",
+                  "shortName": "T. Langford",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000205"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000205.png",
+                    "alt": "Theo Langford"
+                  },
+                  "jersey": "28",
+                  "position": {
+                    "name": "Forward",
+                    "displayName": "Forward",
+                    "abbreviation": "F"
+                  }
+                },
+                "starter": true,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "26",
+                  "8",
+                  "3-6",
+                  "1-3",
+                  "1-2",
+                  "5",
+                  "1",
+                  "1",
+                  "0",
+                  "0",
+                  "1",
+                  "4",
+                  "4",
+                  "+2"
+                ]
+              },
+              {
+                "active": true,
+                "athlete": {
+                  "id": "9000206",
+                  "uid": "s:40~l:46~a:9000206",
+                  "guid": "guid-9000206",
+                  "displayName": "Marco Bellini",
+                  "shortName": "M. Bellini",
+                  "links": [
+                    {
+                      "rel": [
+                        "playercard",
+                        "desktop",
+                        "athlete"
+                      ],
+                      "href": "https://www.espn.com/nba/player/_/id/9000206"
+                    }
+                  ],
+                  "headshot": {
+                    "href": "https://a.espncdn.com/i/headshots/nba/players/full/9000206.png",
+                    "alt": "Marco Bellini"
+                  },
+                  "jersey": "20",
+                  "position": {
+                    "name": "Guard",
+                    "displayName": "Guard",
+                    "abbreviation": "G"
+                  }
+                },
+                "starter": false,
+                "didNotPlay": false,
+                "reason": "",
+                "ejected": false,
+                "stats": [
+                  "17",
+                  "7",
+                  "2-6",
+                  "1-4",
+                  "2-2",
+                  "1",
+                  "1",
+                  "1",
+                  "0",
+                  "0",
+                  "0",
+                  "1",
+                  "1",
+                  "-1"
+                ]
+              }
+            ],
+            "totals": [
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              "",
+              ""
+            ]
+          }
+        ],
+        "displayOrder": 2
+      }
+    ]
+  },
+  "format": {
+    "regulation": {
+      "periods": 4
+    }
+  },
+  "gameInfo": {
+    "venue": {
+      "fullName": "Arena"
+    }
+  },
+  "header": {
+    "id": "401810002",
+    "uid": "s:40~l:46~e:401810002",
+    "season": {
+      "year": 2027,
+      "type": 2
+    },
+    "competitions": [
+      {
+        "id": "401810002",
+        "date": "2026-11-06T00:30Z",
+        "competitors": [
+          {
+            "id": "13",
+            "homeAway": "home",
+            "winner": true,
+            "team": {
+              "id": "13",
+              "uid": "s:40~l:46~t:13",
+              "slug": "los-angeles-lakers",
+              "location": "Los Angeles",
+              "name": "Lakers",
+              "abbreviation": "LAL",
+              "displayName": "Los Angeles Lakers",
+              "shortDisplayName": "Lakers",
+              "color": "000000",
+              "alternateColor": "ffffff",
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/lal.png"
+            },
+            "score": "112"
+          },
+          {
+            "id": "9",
+            "homeAway": "away",
+            "winner": false,
+            "team": {
+              "id": "9",
+              "uid": "s:40~l:46~t:9",
+              "slug": "golden-state-warriors",
+              "location": "Golden State",
+              "name": "Warriors",
+              "abbreviation": "GS",
+              "displayName": "Golden State Warriors",
+              "shortDisplayName": "Warriors",
+              "color": "000000",
+              "alternateColor": "ffffff",
+              "logo": "https://a.espncdn.com/i/teamlogos/nba/500/gs.png"
+            },
+            "score": "98"
+          }
+        ],
+        "status": {
+          "type": {
+            "id": "3",
+            "name": "STATUS_FINAL",
+            "state": "post",
+            "completed": true,
+            "description": "Final",
+            "detail": "Final",
+            "shortDetail": "Final"
+          }
+        }
+      }
+    ]
+  },
+  "plays": []
+}

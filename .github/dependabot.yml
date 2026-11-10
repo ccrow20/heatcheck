@@ -1,0 +1,28 @@
+# Weekly pull requests for outdated GitHub Actions and dev dependencies, so
+# security fixes don't wait for you to notice. The Lambda itself has no
+# third-party dependencies to update.
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+    groups:
+      actions:
+        patterns: ["*"]
+
+  - package-ecosystem: pip
+    directory: /backend
+    schedule:
+      interval: weekly
+    groups:
+      dev-tools:
+        patterns: ["*"]
+
+  - package-ecosystem: pip
+    directory: /infra
+    schedule:
+      interval: weekly
+    groups:
+      cdk:
+        patterns: ["*"]

@@ -1,0 +1,478 @@
+{
+  "get": "players/statistics",
+  "parameters": {
+    "game": "16011"
+  },
+  "errors": [],
+  "results": 12,
+  "response": [
+    {
+      "player": {
+        "id": 1300,
+        "firstname": "Cole",
+        "lastname": "Hargrove"
+      },
+      "team": {
+        "id": 11,
+        "name": "Golden State Warriors",
+        "nickname": "Warriors",
+        "code": "GSW",
+        "logo": "https://upload.wikimedia.org/gsw.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 29,
+      "pos": "G",
+      "min": "36",
+      "fgm": 10,
+      "fga": 22,
+      "fgp": "45.5",
+      "ftm": 3,
+      "fta": 3,
+      "ftp": "100.0",
+      "tpm": 6,
+      "tpa": 13,
+      "tpp": "46.2",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 6,
+      "pFouls": 1,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-7",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1301,
+        "firstname": "Darius",
+        "lastname": "Webb"
+      },
+      "team": {
+        "id": 11,
+        "name": "Golden State Warriors",
+        "nickname": "Warriors",
+        "code": "GSW",
+        "logo": "https://upload.wikimedia.org/gsw.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 16,
+      "pos": "G",
+      "min": "34",
+      "fgm": 6,
+      "fga": 13,
+      "fgp": "46.2",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 1,
+      "defReb": 6,
+      "totReb": 7,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 2,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "-10",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1302,
+        "firstname": "Omar",
+        "lastname": "Saleh"
+      },
+      "team": {
+        "id": 11,
+        "name": "Golden State Warriors",
+        "nickname": "Warriors",
+        "code": "GSW",
+        "logo": "https://upload.wikimedia.org/gsw.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 10,
+      "pos": "G",
+      "min": "28",
+      "fgm": 4,
+      "fga": 7,
+      "fgp": "57.1",
+      "ftm": 2,
+      "fta": 4,
+      "ftp": "50.0",
+      "tpm": 0,
+      "tpa": 0,
+      "tpp": "0",
+      "offReb": 3,
+      "defReb": 6,
+      "totReb": 9,
+      "assists": 2,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 2,
+      "plusMinus": "-6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1303,
+        "firstname": "Trey",
+        "lastname": "Dalton"
+      },
+      "team": {
+        "id": 11,
+        "name": "Golden State Warriors",
+        "nickname": "Warriors",
+        "code": "GSW",
+        "logo": "https://upload.wikimedia.org/gsw.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 14,
+      "pos": "G",
+      "min": "31",
+      "fgm": 5,
+      "fga": 12,
+      "fgp": "41.7",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 3,
+      "tpa": 8,
+      "tpp": "37.5",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1304,
+        "firstname": "Finn",
+        "lastname": "Gallagher"
+      },
+      "team": {
+        "id": 11,
+        "name": "Golden State Warriors",
+        "nickname": "Warriors",
+        "code": "GSW",
+        "logo": "https://upload.wikimedia.org/gsw.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 5,
+      "pos": "G",
+      "min": "25",
+      "fgm": 2,
+      "fga": 6,
+      "fgp": "33.3",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 1,
+      "defReb": 3,
+      "totReb": 4,
+      "assists": 1,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "-8",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1305,
+        "firstname": "Isaac",
+        "lastname": "Royce"
+      },
+      "team": {
+        "id": 11,
+        "name": "Golden State Warriors",
+        "nickname": "Warriors",
+        "code": "GSW",
+        "logo": "https://upload.wikimedia.org/gsw.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 9,
+      "pos": "G",
+      "min": "20",
+      "fgm": 3,
+      "fga": 8,
+      "fgp": "37.5",
+      "ftm": 1,
+      "fta": 1,
+      "ftp": "100.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 2,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "0",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1200,
+        "firstname": "Dominic",
+        "lastname": "Shaw"
+      },
+      "team": {
+        "id": 17,
+        "name": "Los Angeles Lakers",
+        "nickname": "Lakers",
+        "code": "LAL",
+        "logo": "https://upload.wikimedia.org/lal.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 33,
+      "pos": "G",
+      "min": "38:00",
+      "fgm": 12,
+      "fga": 22,
+      "fgp": "54.5",
+      "ftm": 7,
+      "fta": 9,
+      "ftp": "77.8",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 2,
+      "defReb": 8,
+      "totReb": 10,
+      "assists": 9,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 4,
+      "blocks": 1,
+      "plusMinus": "+11",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1201,
+        "firstname": "Kofi",
+        "lastname": "Mensah"
+      },
+      "team": {
+        "id": 17,
+        "name": "Los Angeles Lakers",
+        "nickname": "Lakers",
+        "code": "LAL",
+        "logo": "https://upload.wikimedia.org/lal.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 22,
+      "pos": "G",
+      "min": "33:07",
+      "fgm": 9,
+      "fga": 14,
+      "fgp": "64.3",
+      "ftm": 4,
+      "fta": 6,
+      "ftp": "66.7",
+      "tpm": 0,
+      "tpa": 0,
+      "tpp": "0",
+      "offReb": 4,
+      "defReb": 9,
+      "totReb": 13,
+      "assists": 3,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 3,
+      "plusMinus": "+8",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1202,
+        "firstname": "Ryan",
+        "lastname": "Castellanos"
+      },
+      "team": {
+        "id": 17,
+        "name": "Los Angeles Lakers",
+        "nickname": "Lakers",
+        "code": "LAL",
+        "logo": "https://upload.wikimedia.org/lal.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 18,
+      "pos": "G",
+      "min": "35:14",
+      "fgm": 6,
+      "fga": 15,
+      "fgp": "40.0",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100.0",
+      "tpm": 4,
+      "tpa": 10,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 5,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "+6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1203,
+        "firstname": "Ben",
+        "lastname": "Whitaker"
+      },
+      "team": {
+        "id": 17,
+        "name": "Los Angeles Lakers",
+        "nickname": "Lakers",
+        "code": "LAL",
+        "logo": "https://upload.wikimedia.org/lal.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 10,
+      "pos": "G",
+      "min": "29:21",
+      "fgm": 4,
+      "fga": 10,
+      "fgp": "40.0",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 2,
+      "pFouls": 3,
+      "steals": 2,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "+4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1204,
+        "firstname": "Theo",
+        "lastname": "Langford"
+      },
+      "team": {
+        "id": 17,
+        "name": "Los Angeles Lakers",
+        "nickname": "Lakers",
+        "code": "LAL",
+        "logo": "https://upload.wikimedia.org/lal.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 8,
+      "pos": "G",
+      "min": "26:28",
+      "fgm": 3,
+      "fga": 6,
+      "fgp": "50.0",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 1,
+      "tpa": 3,
+      "tpp": "33.3",
+      "offReb": 1,
+      "defReb": 4,
+      "totReb": 5,
+      "assists": 1,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "+2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1205,
+        "firstname": "Marco",
+        "lastname": "Bellini"
+      },
+      "team": {
+        "id": 17,
+        "name": "Los Angeles Lakers",
+        "nickname": "Lakers",
+        "code": "LAL",
+        "logo": "https://upload.wikimedia.org/lal.png"
+      },
+      "game": {
+        "id": 16011
+      },
+      "points": 7,
+      "pos": "G",
+      "min": "17:35",
+      "fgm": 2,
+      "fga": 6,
+      "fgp": "33.3",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100.0",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 0,
+      "defReb": 1,
+      "totReb": 1,
+      "assists": 1,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "-1",
+      "comment": null
+    }
+  ]
+}

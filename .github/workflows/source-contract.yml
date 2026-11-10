@@ -1,0 +1,33 @@
+name: Source contract check
+
+# Unit tests use saved fixtures, so they can't notice when ESPN or API-NBA
+# changes its format. This hits the live APIs once a week and fails if the
+# parsers no longer understand them, usually before the nightly job breaks.
+
+on:
+  schedule:
+    - cron: "17 15 * * 1" # Mondays, 15:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      # Optional repository secret. GitHub masks it in logs, and the script
+      # never prints it either.
+      APINBA_KEY: ${{ secrets.APINBA_KEY }}
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.13"
+      - name: ESPN
+        run: python backend/scripts/check_sources.py --source espn
+      - name: API-NBA (only if the APINBA_KEY secret is set)
+        if: env.APINBA_KEY != ''
+        run: python backend/scripts/check_sources.py --source apinba

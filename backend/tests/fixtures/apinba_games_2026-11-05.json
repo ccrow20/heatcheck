@@ -1,0 +1,250 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-11-05"
+  },
+  "errors": [],
+  "results": 3,
+  "response": [
+    {
+      "id": 16001,
+      "league": "standard",
+      "season": 2026,
+      "date": {
+        "start": "2026-11-05T00:00:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Arena",
+        "city": "City",
+        "state": "ST",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 6,
+          "name": "Chicago Bulls",
+          "nickname": "Bulls",
+          "code": "CHI",
+          "logo": "https://upload.wikimedia.org/chi.png"
+        },
+        "home": {
+          "id": 10,
+          "name": "Detroit Pistons",
+          "nickname": "Pistons",
+          "code": "DET",
+          "logo": "https://upload.wikimedia.org/det.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 104
+        },
+        "home": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 99
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 16010,
+      "league": "standard",
+      "season": 2026,
+      "date": {
+        "start": "2026-11-05T23:30:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Arena",
+        "city": "City",
+        "state": "ST",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 2,
+          "name": "Boston Celtics",
+          "nickname": "Celtics",
+          "code": "BOS",
+          "logo": "https://upload.wikimedia.org/bos.png"
+        },
+        "home": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/nyk.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 108
+        },
+        "home": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 101
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 16999,
+      "league": "vegas",
+      "season": 2026,
+      "date": {
+        "start": "2026-11-05T21:00:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Arena",
+        "city": "City",
+        "state": "ST",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 901,
+          "name": "Vegas Team A",
+          "nickname": "A",
+          "code": "VGA",
+          "logo": "https://upload.wikimedia.org/vga.png"
+        },
+        "home": {
+          "id": 902,
+          "name": "Vegas Team B",
+          "nickname": "B",
+          "code": "VGB",
+          "logo": "https://upload.wikimedia.org/vgb.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 80
+        },
+        "home": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 77
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    }
+  ]
+}

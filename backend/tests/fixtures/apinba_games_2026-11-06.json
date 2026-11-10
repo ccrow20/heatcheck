@@ -1,0 +1,250 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-11-06"
+  },
+  "errors": [],
+  "results": 3,
+  "response": [
+    {
+      "id": 16011,
+      "league": "standard",
+      "season": 2026,
+      "date": {
+        "start": "2026-11-06T03:30:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 3,
+        "long": "Finished"
+      },
+      "periods": {
+        "current": 4,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Arena",
+        "city": "City",
+        "state": "ST",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 11,
+          "name": "Golden State Warriors",
+          "nickname": "Warriors",
+          "code": "GSW",
+          "logo": "https://upload.wikimedia.org/gsw.png"
+        },
+        "home": {
+          "id": 17,
+          "name": "Los Angeles Lakers",
+          "nickname": "Lakers",
+          "code": "LAL",
+          "logo": "https://upload.wikimedia.org/lal.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 98
+        },
+        "home": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": 112
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 16012,
+      "league": "standard",
+      "season": 2026,
+      "date": {
+        "start": "2026-11-06T04:00:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 1,
+        "long": "Not Started"
+      },
+      "periods": {
+        "current": 0,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Arena",
+        "city": "City",
+        "state": "ST",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 20,
+          "name": "Miami Heat",
+          "nickname": "Heat",
+          "code": "MIA",
+          "logo": "https://upload.wikimedia.org/mia.png"
+        },
+        "home": {
+          "id": 26,
+          "name": "Orlando Magic",
+          "nickname": "Magic",
+          "code": "ORL",
+          "logo": "https://upload.wikimedia.org/orl.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": null
+        },
+        "home": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": null
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    },
+    {
+      "id": 16020,
+      "league": "standard",
+      "season": 2026,
+      "date": {
+        "start": "2026-11-06T23:00:00.000Z",
+        "end": null,
+        "duration": null
+      },
+      "stage": 2,
+      "status": {
+        "clock": null,
+        "halftime": false,
+        "short": 1,
+        "long": "Not Started"
+      },
+      "periods": {
+        "current": 0,
+        "total": 4,
+        "endOfPeriod": false
+      },
+      "arena": {
+        "name": "Arena",
+        "city": "City",
+        "state": "ST",
+        "country": "USA"
+      },
+      "teams": {
+        "visitors": {
+          "id": 24,
+          "name": "New York Knicks",
+          "nickname": "Knicks",
+          "code": "NYK",
+          "logo": "https://upload.wikimedia.org/nyk.png"
+        },
+        "home": {
+          "id": 2,
+          "name": "Boston Celtics",
+          "nickname": "Celtics",
+          "code": "BOS",
+          "logo": "https://upload.wikimedia.org/bos.png"
+        }
+      },
+      "scores": {
+        "visitors": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": null
+        },
+        "home": {
+          "win": 0,
+          "loss": 0,
+          "series": {
+            "win": 0,
+            "loss": 0
+          },
+          "linescore": [
+            "0",
+            "0",
+            "0",
+            "0"
+          ],
+          "points": null
+        }
+      },
+      "officials": [],
+      "timesTied": null,
+      "leadChanges": null,
+      "nugget": null
+    }
+  ]
+}

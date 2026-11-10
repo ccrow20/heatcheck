@@ -1,0 +1,23 @@
+{
+  "_help": "Copy to config.json (git-ignored, since it holds your email) and fill in. Every key is optional; these are the defaults except alert_email and github_repo.",
+  "project": "heatcheck",
+  "aws_region": "us-east-1",
+  "alert_email": "you@example.com",
+  "github_repo": "your-github-username/heatcheck",
+
+  "_create_github_oidc_provider": "Set to false if your AWS account already has GitHub's OIDC provider.",
+  "create_github_oidc_provider": true,
+
+  "_data_sources": "Priority order. ESPN needs no key; API-NBA is used only after `make set-api-key`.",
+  "data_sources": "espn,apinba",
+  "lookback_days": 2,
+  "schedule_expression": "cron(30 5,12 * * ? *)",
+  "schedule_timezone": "America/New_York",
+  "monthly_budget_usd": 5,
+  "create_budget": true,
+
+  "_domain": "Optional custom domain (about $0.50/month for the hosted zone). Needs aws_region us-east-1.",
+  "domain_name": "",
+  "hosted_zone_id": "",
+  "hosted_zone_name": ""
+}

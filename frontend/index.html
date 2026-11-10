@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Heat Check: who's hot and cold in the NBA</title>
+  <meta name="description" content="Updated every morning: the NBA players playing furthest above and below their own usual level over their last five games.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lists">Skip to the hot and cold lists</a>
+
+  <header class="masthead">
+    <div class="masthead__brand">
+      <h1 class="wordmark">Heat Check</h1>
+      <p class="tagline">Which NBA players are playing above or below their usual level over their last five games.</p>
+    </div>
+    <p class="freshness" id="freshness">Loading the latest numbers</p>
+  </header>
+
+  <div class="notice" id="notice" role="status" hidden></div>
+
+  <main id="main">
+    <form class="stat-switch" id="stat-switch" aria-label="Stat to rank by">
+      <fieldset>
+        <legend class="visually-hidden">Rank players by</legend>
+        <div class="stat-switch__options" id="stat-options"></div>
+      </fieldset>
+    </form>
+
+    <section class="thermo" aria-labelledby="thermo-title">
+      <h2 class="visually-hidden" id="thermo-title">Every ranked player by heat index</h2>
+      <p class="thermo__caption" id="thermo-caption"></p>
+      <div class="thermo__chart" id="thermo-chart"></div>
+    </section>
+
+    <section class="lists" id="lists" aria-label="Hot and cold lists">
+      <div class="list list--hot">
+        <h2 class="list__title">Heating up <span class="list__count" id="hot-count"></span></h2>
+        <ol class="list__rows" id="hot-list"></ol>
+        <button class="list__more" id="hot-more" type="button" hidden></button>
+      </div>
+      <div class="list list--cold">
+        <h2 class="list__title">Cooling off <span class="list__count" id="cold-count"></span></h2>
+        <ol class="list__rows" id="cold-list"></ol>
+        <button class="list__more" id="cold-more" type="button" hidden></button>
+      </div>
+    </section>
+
+    <section class="lookup" id="lookup" aria-labelledby="lookup-title">
+      <h2 class="section-title" id="lookup-title">Look up a player</h2>
+      <form class="lookup__form" id="lookup-form" role="search">
+        <label class="lookup__label" for="player-search">Player name</label>
+        <div class="lookup__row">
+          <input class="lookup__input" id="player-search" type="search" list="player-names" autocomplete="off" spellcheck="false" placeholder="Start typing a name">
+          <button class="button" type="submit">Show player</button>
+        </div>
+        <datalist id="player-names"></datalist>
+      </form>
+      <div class="detail" id="player-detail" aria-live="polite"></div>
+    </section>
+
+    <section class="method" aria-labelledby="method-title">
+      <h2 class="section-title" id="method-title">How the heat index works</h2>
+      <div class="method__body">
+        <p>Every morning Heat Check pulls the previous night's box scores and compares each player's last <span data-param="window">5</span> games with his usual level: the <span data-param="baseline_max">30</span> games before those, reaching back into last season when needed.</p>
+        <p>The heat index measures how unusual that difference is <em>for that player</em>. A scorer who swings between 12 and 35 points needs a bigger jump to register than one who scores 18 every night. An index of +2 means a stretch that good would come up only about 2% of the time for him by chance. Players at +<span data-param="threshold">1.5</span> or higher are heating up; −<span data-param="threshold">1.5</span> or lower, cooling off.</p>
+        <p>Games under <span data-param="min_minutes">10</span> minutes don't count, and a player needs <span data-param="min_games">13</span> qualifying games, with one in the last <span data-param="max_days_inactive">10</span> days, to be ranked. To be called cold he has to normally produce (10 points a game for points, for example), so a bench player who goes quiet doesn't crowd out a struggling star.</p>
+        <p>Game Score is John Hollinger's one-number summary of a box score: points, plus credit for rebounds, assists, steals and blocks, minus missed shots, turnovers and fouls.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Box scores from ESPN, with API-NBA as a backup. Not affiliated with the NBA or its teams.</p>
+    <p><a href="https://github.com/">Source code on GitHub</a></p>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+  <noscript><p class="notice notice--error">Heat Check needs JavaScript to draw the charts and lists.</p></noscript>
+</body>
+</html>

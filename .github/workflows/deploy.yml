@@ -1,0 +1,76 @@
+name: Deploy
+
+# Ships the website and the Lambda code on every push to main.
+# Infrastructure changes are applied with `make deploy` (cdk deploy) from your machine.
+#
+# Needs these repository variables (Settings > Secrets and variables > Actions >
+# Variables); `make github-vars` sets all of them from the deployed stack:
+#   AWS_REGION, AWS_DEPLOY_ROLE_ARN, SITE_BUCKET, CLOUDFRONT_DISTRIBUTION_ID, LAMBDA_FUNCTION_NAME
+# None of these are secrets: there are no AWS keys anywhere. The job trades a
+# short-lived GitHub OIDC token for a role that only accepts pushes to main.
+# Until AWS_DEPLOY_ROLE_ARN is set, the deploy job is skipped.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "frontend/**"
+      - "backend/src/**"
+      - ".github/workflows/deploy.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  checks:
+    uses: ./.github/workflows/ci.yml
+    secrets: inherit # lets the secret scan use GITLEAKS_LICENSE if the repo has one
+
+  deploy:
+    needs: checks
+    if: vars.AWS_DEPLOY_ROLE_ARN != ''
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write # only this job can request the OIDC token for AWS
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
+          aws-region: ${{ vars.AWS_REGION }}
+          role-duration-seconds: 900 # the shortest session AWS allows; a deploy takes about a minute
+
+      - name: Upload the website
+        env:
+          BUCKET: ${{ vars.SITE_BUCKET }}
+        run: |
+          # data/ belongs to the Lambda, so it is excluded (and the role can't touch it anyway).
+          aws s3 sync frontend/ "s3://$BUCKET" --delete --exclude "data/*" --exclude "*.html" \
+            --cache-control "public, max-age=3600"
+          aws s3 sync frontend/ "s3://$BUCKET" --delete --exclude "*" --include "*.html" \
+            --cache-control "no-cache"
+
+      - name: Deploy the Lambda code
+        env:
+          FUNCTION: ${{ vars.LAMBDA_FUNCTION_NAME }}
+        run: |
+          (cd backend/src && zip -qr "$RUNNER_TEMP/lambda.zip" heatcheck -x '*/__pycache__/*' '*.pyc')
+          aws lambda update-function-code --function-name "$FUNCTION" \
+            --zip-file "fileb://$RUNNER_TEMP/lambda.zip" --query 'LastUpdateStatus' --output text
+          aws lambda wait function-updated --function-name "$FUNCTION"
+
+      - name: Refresh the CDN
+        env:
+          DISTRIBUTION: ${{ vars.CLOUDFRONT_DISTRIBUTION_ID }}
+        run: |
+          aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION" --paths "/*" \
+            --query 'Invalidation.Id' --output text

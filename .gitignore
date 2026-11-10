@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Local data (sample league, local pipeline runs)
+.localdata/
+frontend/data/streaks.json
+
+# CDK (config.json holds your email address, so it stays local)
+infra/config.json
+infra/cdk.out/
+infra/outputs.json
+
+# Secrets: never commit these (the secret scan in CI and pre-commit backs this up)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+.aws/
+credentials
+secrets.*
+
+# Misc
+lambda.zip
+.DS_Store

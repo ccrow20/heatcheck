@@ -1,0 +1,11 @@
+{
+  "get": "games",
+  "parameters": {
+    "date": "2026-11-05"
+  },
+  "errors": {
+    "plan": "Free plans do not have access to this season, try from 2021 to 2023."
+  },
+  "results": 0,
+  "response": []
+}

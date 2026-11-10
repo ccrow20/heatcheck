@@ -1,0 +1,712 @@
+{
+  "get": "players/statistics",
+  "parameters": {
+    "game": "16010"
+  },
+  "errors": [],
+  "results": 18,
+  "response": [
+    {
+      "player": {
+        "id": 1000,
+        "firstname": "Marcus",
+        "lastname": "Hale"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 28,
+      "pos": "G",
+      "min": "36:40",
+      "fgm": 10,
+      "fga": 21,
+      "fgp": "47.6",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 3,
+      "tpa": 8,
+      "tpp": "37.5",
+      "offReb": 1,
+      "defReb": 7,
+      "totReb": 8,
+      "assists": 5,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "+9",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1001,
+        "firstname": "Devin",
+        "lastname": "Okafor"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 22,
+      "pos": "G",
+      "min": "34:47",
+      "fgm": 8,
+      "fga": 17,
+      "fgp": "47.1",
+      "ftm": 4,
+      "fta": 4,
+      "ftp": "100.0",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 0,
+      "defReb": 4,
+      "totReb": 4,
+      "assists": 6,
+      "pFouls": 3,
+      "steals": 2,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "+5",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1002,
+        "firstname": "Luka",
+        "lastname": "Dragović"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 14,
+      "pos": "G",
+      "min": "29:54",
+      "fgm": 6,
+      "fga": 9,
+      "fgp": "66.7",
+      "ftm": 2,
+      "fta": 3,
+      "ftp": "66.7",
+      "tpm": 0,
+      "tpa": 1,
+      "tpp": "0.0",
+      "offReb": 3,
+      "defReb": 8,
+      "totReb": 11,
+      "assists": 2,
+      "pFouls": 4,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 2,
+      "plusMinus": "+7",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1003,
+        "firstname": "Tyrell",
+        "lastname": "Banks Jr."
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 13,
+      "pos": "G",
+      "min": "31:01",
+      "fgm": 5,
+      "fga": 12,
+      "fgp": "41.7",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0",
+      "tpm": 3,
+      "tpa": 7,
+      "tpp": "42.9",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 4,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "-2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1004,
+        "firstname": "Sam",
+        "lastname": "O'Neill"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 9,
+      "pos": "G",
+      "min": "27:08",
+      "fgm": 3,
+      "fga": 7,
+      "fgp": "42.9",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100.0",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 2,
+      "defReb": 4,
+      "totReb": 6,
+      "assists": 1,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 0,
+      "blocks": 1,
+      "plusMinus": "+4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1005,
+        "firstname": "Andre",
+        "lastname": "Whitfield"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 9,
+      "pos": "G",
+      "min": "18:15",
+      "fgm": 3,
+      "fga": 8,
+      "fgp": "37.5",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 3,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "-3",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1006,
+        "firstname": "Jonas",
+        "lastname": "Petrov"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 5,
+      "pos": "G",
+      "min": "14:22",
+      "fgm": 2,
+      "fga": 3,
+      "fgp": "66.7",
+      "ftm": 1,
+      "fta": 2,
+      "ftp": "50.0",
+      "tpm": 0,
+      "tpa": 0,
+      "tpp": "0",
+      "offReb": 2,
+      "defReb": 3,
+      "totReb": 5,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 1,
+      "plusMinus": "+1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1007,
+        "firstname": "Caleb",
+        "lastname": "Moore"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 0,
+      "pos": "G",
+      "min": "1:29",
+      "fgm": 0,
+      "fga": 0,
+      "fgp": "0",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0",
+      "tpm": 0,
+      "tpa": 0,
+      "tpp": "0",
+      "offReb": 0,
+      "defReb": 0,
+      "totReb": 0,
+      "assists": 0,
+      "pFouls": 0,
+      "steals": 0,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "0",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1008,
+        "firstname": "Rico",
+        "lastname": "Alvarez"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": null,
+      "pos": null,
+      "min": null,
+      "fgm": null,
+      "fga": null,
+      "fgp": null,
+      "ftm": null,
+      "fta": null,
+      "ftp": null,
+      "tpm": null,
+      "tpa": null,
+      "tpp": null,
+      "offReb": null,
+      "defReb": null,
+      "totReb": null,
+      "assists": null,
+      "pFouls": null,
+      "steals": null,
+      "turnovers": null,
+      "blocks": null,
+      "plusMinus": null,
+      "comment": "DNP"
+    },
+    {
+      "player": {
+        "id": 1100,
+        "firstname": "Jalen",
+        "lastname": "Rivers"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 32,
+      "pos": "G",
+      "min": "37",
+      "fgm": 11,
+      "fga": 23,
+      "fgp": "47.8",
+      "ftm": 6,
+      "fta": 7,
+      "ftp": "85.7",
+      "tpm": 4,
+      "tpa": 10,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 3,
+      "totReb": 3,
+      "assists": 7,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 3,
+      "blocks": 0,
+      "plusMinus": "-6",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1101,
+        "firstname": "Isaiah",
+        "lastname": "Grant"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 18,
+      "pos": "G",
+      "min": "35",
+      "fgm": 7,
+      "fga": 15,
+      "fgp": "46.7",
+      "ftm": 3,
+      "fta": 4,
+      "ftp": "75.0",
+      "tpm": 1,
+      "tpa": 4,
+      "tpp": "25.0",
+      "offReb": 2,
+      "defReb": 6,
+      "totReb": 8,
+      "assists": 2,
+      "pFouls": 3,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 1,
+      "plusMinus": "-8",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1102,
+        "firstname": "Ty",
+        "lastname": "Morrison"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 11,
+      "pos": "G",
+      "min": "30",
+      "fgm": 5,
+      "fga": 8,
+      "fgp": "62.5",
+      "ftm": 1,
+      "fta": 4,
+      "ftp": "25.0",
+      "tpm": 0,
+      "tpa": 0,
+      "tpp": "0",
+      "offReb": 4,
+      "defReb": 7,
+      "totReb": 11,
+      "assists": 1,
+      "pFouls": 5,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 3,
+      "plusMinus": "-4",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1103,
+        "firstname": "Noah",
+        "lastname": "Bennett"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 12,
+      "pos": "G",
+      "min": "32",
+      "fgm": 4,
+      "fga": 11,
+      "fgp": "36.4",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100.0",
+      "tpm": 2,
+      "tpa": 6,
+      "tpp": "33.3",
+      "offReb": 1,
+      "defReb": 2,
+      "totReb": 3,
+      "assists": 3,
+      "pFouls": 2,
+      "steals": 2,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "-5",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1104,
+        "firstname": "Elijah",
+        "lastname": "Chambers"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 7,
+      "pos": "G",
+      "min": "28",
+      "fgm": 3,
+      "fga": 8,
+      "fgp": "37.5",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0",
+      "tpm": 1,
+      "tpa": 5,
+      "tpp": "20.0",
+      "offReb": 1,
+      "defReb": 5,
+      "totReb": 6,
+      "assists": 2,
+      "pFouls": 4,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "-9",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1105,
+        "firstname": "Miles",
+        "lastname": "Carter"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 12,
+      "pos": "G",
+      "min": "22",
+      "fgm": 4,
+      "fga": 9,
+      "fgp": "44.4",
+      "ftm": 2,
+      "fta": 2,
+      "ftp": "100.0",
+      "tpm": 2,
+      "tpa": 5,
+      "tpp": "40.0",
+      "offReb": 0,
+      "defReb": 2,
+      "totReb": 2,
+      "assists": 2,
+      "pFouls": 1,
+      "steals": 0,
+      "turnovers": 1,
+      "blocks": 0,
+      "plusMinus": "+2",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1106,
+        "firstname": "Gabe",
+        "lastname": "Holloway"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 4,
+      "pos": "G",
+      "min": "16",
+      "fgm": 2,
+      "fga": 4,
+      "fgp": "50.0",
+      "ftm": 0,
+      "fta": 0,
+      "ftp": "0",
+      "tpm": 0,
+      "tpa": 1,
+      "tpp": "0.0",
+      "offReb": 1,
+      "defReb": 2,
+      "totReb": 3,
+      "assists": 0,
+      "pFouls": 2,
+      "steals": 0,
+      "turnovers": 0,
+      "blocks": 0,
+      "plusMinus": "-1",
+      "comment": null
+    },
+    {
+      "player": {
+        "id": 1107,
+        "firstname": "Victor",
+        "lastname": "Lindqvist"
+      },
+      "team": {
+        "id": 24,
+        "name": "New York Knicks",
+        "nickname": "Knicks",
+        "code": "NYK",
+        "logo": "https://upload.wikimedia.org/nyk.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": null,
+      "pos": null,
+      "min": null,
+      "fgm": null,
+      "fga": null,
+      "fgp": null,
+      "ftm": null,
+      "fta": null,
+      "ftp": null,
+      "tpm": null,
+      "tpa": null,
+      "tpp": null,
+      "offReb": null,
+      "defReb": null,
+      "totReb": null,
+      "assists": null,
+      "pFouls": null,
+      "steals": null,
+      "turnovers": null,
+      "blocks": null,
+      "plusMinus": null,
+      "comment": "DNP"
+    },
+    {
+      "player": {
+        "id": 1000,
+        "firstname": "Marcus",
+        "lastname": "Hale"
+      },
+      "team": {
+        "id": 2,
+        "name": "Boston Celtics",
+        "nickname": "Celtics",
+        "code": "BOS",
+        "logo": "https://upload.wikimedia.org/bos.png"
+      },
+      "game": {
+        "id": 16010
+      },
+      "points": 28,
+      "pos": "G",
+      "min": "36:40",
+      "fgm": 10,
+      "fga": 21,
+      "fgp": "47.6",
+      "ftm": 5,
+      "fta": 6,
+      "ftp": "83.3",
+      "tpm": 3,
+      "tpa": 8,
+      "tpp": "37.5",
+      "offReb": 1,
+      "defReb": 7,
+      "totReb": 8,
+      "assists": 5,
+      "pFouls": 2,
+      "steals": 1,
+      "turnovers": 2,
+      "blocks": 0,
+      "plusMinus": "+9",
+      "comment": null
+    }
+  ]
+}

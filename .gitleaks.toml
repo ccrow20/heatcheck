@@ -1,0 +1,19 @@
+# Gitleaks settings for this repo: every default rule, plus narrow allowlists
+# for patterns that look like keys to the generic rule but can't be secrets.
+# Never allowlist a real key. If one is committed, rotate it, then remove it.
+title = "heatcheck"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Code references, player-name slugs and generated test fixtures"
+regexes = [
+  # Python attribute references such as settings.apinba_key_parameter
+  '''^(self|settings|config|args)\.[a-z0-9_.]+$''',
+  # normalized player names such as luka-dragovic
+  '''^[a-z]+(-[a-z]+)+$''',
+]
+paths = [
+  '''backend/tests/fixtures/''',
+]
