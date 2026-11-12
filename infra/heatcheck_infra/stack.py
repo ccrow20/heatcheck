@@ -1,7 +1,7 @@
 """The whole app as one CloudFormation stack.
 
-    Scheduler -> Lambda -> S3 (data, site) -> CloudFront
-                        -> CloudWatch metrics -> alarms -> SNS
+Scheduler -> Lambda -> S3 (data, site) -> CloudFront
+                    -> CloudWatch metrics -> alarms -> SNS
 """
 
 from __future__ import annotations

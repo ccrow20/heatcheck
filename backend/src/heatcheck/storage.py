@@ -1,7 +1,7 @@
 """S3 and local-folder storage.
 
-    gamelogs/season=2026-27/date=2026-11-05.json   data bucket, one file per night
-    data/streaks.json                              site bucket
+gamelogs/season=2026-27/date=2026-11-05.json   data bucket, one file per night
+data/streaks.json                              site bucket
 """
 
 from __future__ import annotations
