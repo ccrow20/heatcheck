@@ -1,3 +1,3 @@
 # CDK libraries for synthesizing the stack (the CDK CLI itself runs through npx).
-aws-cdk-lib>=2.170.0,<3.0.0
-constructs>=10.0.0,<11.0.0
+aws-cdk-lib>=2.275.0,<3.0.0
+constructs>=10.8.1,<11.0.0
