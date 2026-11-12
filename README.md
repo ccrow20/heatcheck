@@ -4,10 +4,6 @@ Shows which NBA players are playing above or below their normal level over their
 
 A Lambda pulls box scores every morning, scores each player against their own baseline, and writes one JSON file that a static site on CloudFront reads.
 
-![screenshot](docs/screenshot.png)
-
-(Screenshot uses sample data, the players are made up.)
-
 ## How it works
 
 - EventBridge runs the Lambda twice a day. It re-fetches the last two nights (to catch stat corrections) and saves one JSON file per night in S3.
