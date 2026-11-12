@@ -25,7 +25,7 @@ class Config:
     sources: tuple[str, ...] = ("espn", "apinba")
     lookback_days: int = 2
     project: str = "heatcheck"
-    apinba_key: str | None = field(default=None, repr=False)  # never printed in logs or tracebacks
+    apinba_key: str | None = field(default=None, repr=False)  # keep it out of logs
     apinba_key_param: str | None = None
 
     @classmethod

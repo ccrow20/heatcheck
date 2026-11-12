@@ -1,5 +1,5 @@
 {
-  "_help": "Copy to config.json (git-ignored, since it holds your email) and fill in. Every key is optional; these are the defaults except alert_email and github_repo.",
+  "_help": "Copy to config.json and fill in. Everything except alert_email and github_repo has a default.",
   "project": "heatcheck",
   "aws_region": "us-east-1",
   "alert_email": "you@example.com",

@@ -1,8 +1,5 @@
-"""Assertions on the synthesized CloudFormation template.
-
-These pin down the security properties so a later edit can't quietly weaken
-them: private buckets, the CSP, least-privilege roles, no secret in the Lambda.
-They need aws-cdk-lib (and Node.js), so they are skipped where it isn't installed.
+"""Checks on the synthesized template, mostly the security stuff: private buckets,
+CSP, least-privilege roles, no secret in the Lambda. Skipped without aws-cdk-lib.
 """
 
 import pytest

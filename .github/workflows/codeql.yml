@@ -1,9 +1,7 @@
 name: CodeQL
 
-# GitHub's static analysis for security bugs (injection, unsafe deserialization,
-# XSS sinks...) in the Python and JavaScript. Results show up under the
-# repository's Security tab. Free for public repositories; private ones need
-# GitHub Advanced Security, so the job skips itself there.
+# CodeQL for the Python and JS. Results go to the Security tab.
+# Skips itself on private repos (needs Advanced Security).
 
 on:
   push:

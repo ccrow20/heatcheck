@@ -12,12 +12,12 @@ venv/
 .localdata/
 frontend/data/streaks.json
 
-# CDK (config.json holds your email address, so it stays local)
+# CDK
 infra/config.json
 infra/cdk.out/
 infra/outputs.json
 
-# Secrets: never commit these (the secret scan in CI and pre-commit backs this up)
+# Secrets
 .env
 .env.*
 !.env.example

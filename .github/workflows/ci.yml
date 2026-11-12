@@ -6,7 +6,7 @@ on:
   pull_request:
   workflow_call: # the deploy workflow runs these checks first
 
-# Every job gets a read-only token unless it asks for more.
+# Read-only token by default
 permissions:
   contents: read
 
@@ -17,16 +17,15 @@ jobs:
     steps:
       - uses: actions/checkout@v6
         with:
-          fetch-depth: 0 # full history, so every commit in the push or PR gets scanned
+          fetch-depth: 0 # scan every commit, not just the last
           persist-credentials: false
       - uses: gitleaks/gitleaks-action@v3
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          # Free for personal accounts. Repos owned by an organization need a
-          # (free) key from gitleaks.io stored as the GITLEAKS_LICENSE secret.
+          # only needed for org-owned repos
           GITLEAKS_LICENSE: ${{ secrets.GITLEAKS_LICENSE }}
           GITLEAKS_ENABLE_COMMENTS: false
-          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: false # a report artifact could itself contain the leaked value
+          GITLEAKS_ENABLE_UPLOAD_ARTIFACT: false # the report would include the secret
 
   backend:
     name: Backend tests and lint

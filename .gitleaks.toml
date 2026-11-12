@@ -1,6 +1,4 @@
-# Gitleaks settings for this repo: every default rule, plus narrow allowlists
-# for patterns that look like keys to the generic rule but can't be secrets.
-# Never allowlist a real key. If one is committed, rotate it, then remove it.
+# Default rules plus a few allowlists for things that look like keys but aren't.
 title = "heatcheck"
 
 [extend]

@@ -1,14 +1,10 @@
 name: Deploy
 
-# Ships the website and the Lambda code on every push to main.
-# Infrastructure changes are applied with `make deploy` (cdk deploy) from your machine.
+# Deploys the site and Lambda code on push to main. Infra changes go out with `make deploy`.
 #
-# Needs these repository variables (Settings > Secrets and variables > Actions >
-# Variables); `make github-vars` sets all of them from the deployed stack:
+# Repo variables (`make github-vars` sets them):
 #   AWS_REGION, AWS_DEPLOY_ROLE_ARN, SITE_BUCKET, CLOUDFRONT_DISTRIBUTION_ID, LAMBDA_FUNCTION_NAME
-# None of these are secrets: there are no AWS keys anywhere. The job trades a
-# short-lived GitHub OIDC token for a role that only accepts pushes to main.
-# Until AWS_DEPLOY_ROLE_ARN is set, the deploy job is skipped.
+# Not secrets, auth is via OIDC. Skipped until AWS_DEPLOY_ROLE_ARN is set.
 
 on:
   push:
@@ -47,13 +43,13 @@ jobs:
         with:
           role-to-assume: ${{ vars.AWS_DEPLOY_ROLE_ARN }}
           aws-region: ${{ vars.AWS_REGION }}
-          role-duration-seconds: 900 # the shortest session AWS allows; a deploy takes about a minute
+          role-duration-seconds: 900 # AWS minimum, deploy takes ~1 min
 
       - name: Upload the website
         env:
           BUCKET: ${{ vars.SITE_BUCKET }}
         run: |
-          # data/ belongs to the Lambda, so it is excluded (and the role can't touch it anyway).
+          # data/ is the Lambda's, skip it
           aws s3 sync frontend/ "s3://$BUCKET" --delete --exclude "data/*" --exclude "*.html" \
             --cache-control "public, max-age=3600"
           aws s3 sync frontend/ "s3://$BUCKET" --delete --exclude "*" --include "*.html" \

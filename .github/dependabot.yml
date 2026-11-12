@@ -1,6 +1,4 @@
-# Weekly pull requests for outdated GitHub Actions and dev dependencies, so
-# security fixes don't wait for you to notice. The Lambda itself has no
-# third-party dependencies to update.
+# Weekly update PRs for actions and dev deps. The Lambda has no deps.
 version: 2
 updates:
   - package-ecosystem: github-actions

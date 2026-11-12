@@ -6,9 +6,8 @@ BACKEND = cd backend && PYTHONPATH=src
 STACK ?= $(shell $(PY) -c "import json,pathlib;p=pathlib.Path('infra/config.json');print(json.loads(p.read_text()).get('project','heatcheck') if p.exists() else 'heatcheck')")
 REGION ?= $(shell $(PY) -c "import json,pathlib;p=pathlib.Path('infra/config.json');print(json.loads(p.read_text()).get('aws_region','us-east-1') if p.exists() else 'us-east-1')")
 
-# Outputs of the deployed stack, read with the AWS CLI only by the targets that use
-# them. The `X ?= $(eval X := ...)$(X)` form caches the first lookup, so each one
-# is fetched at most once per run. Set one yourself to skip it: make publish DATA_BUCKET=...
+# Stack outputs, looked up only when needed and cached for the run.
+# Pass one in to skip the lookup: make publish DATA_BUCKET=...
 stack_output = $(shell aws cloudformation describe-stacks --region $(REGION) --stack-name $(STACK) \
   --query "Stacks[0].Outputs[?OutputKey=='$(1)'].OutputValue" --output text)
 DATA_BUCKET ?= $(eval DATA_BUCKET := $(call stack_output,DataBucketName))$(DATA_BUCKET)
@@ -17,7 +16,7 @@ DISTRIBUTION_ID ?= $(eval DISTRIBUTION_ID := $(call stack_output,DistributionId)
 FUNCTION_NAME ?= $(eval FUNCTION_NAME := $(call stack_output,FunctionName))$(FUNCTION_NAME)
 GITHUB_ROLE_ARN ?= $(eval GITHUB_ROLE_ARN := $(call stack_output,GithubDeployRoleArn))$(GITHUB_ROLE_ARN)
 
-# $(call require,VAR) stops with a clear message when a stack output came back empty.
+# $(call require,VAR) fails if a stack output is empty.
 require = @if [ -z "$($(1))" ] || [ "$($(1))" = "None" ]; then \
   echo "Couldn't read $(1) from stack $(STACK) in $(REGION). Deploy first (make deploy) and check your AWS credentials."; \
   exit 1; fi
@@ -75,8 +74,7 @@ deploy: ## Create or update everything in AWS (infrastructure, Lambda code, webs
 destroy: ## Delete the stack (the two buckets are kept so your data survives; delete them by hand)
 	cd infra && $(CDK) destroy
 
-# The read timeout outlasts the Lambda's longest run: if the CLI timed out first,
-# it would retry the call and run the pipeline a second time.
+# Read timeout is longer than the Lambda timeout, otherwise the CLI retries and it runs twice.
 invoke: ## Run the deployed pipeline now
 	$(call require,FUNCTION_NAME)
 	aws lambda invoke --region $(REGION) --function-name $(FUNCTION_NAME) --cli-read-timeout 900 \

@@ -42,9 +42,8 @@ FRONTEND = REPO_ROOT / "frontend"
 METRICS_NAMESPACE = "HeatCheck"  # must match backend/src/heatcheck/telemetry.py
 GITHUB_OIDC_URL = "token.actions.githubusercontent.com"
 
-# The site loads nothing from other origins (system fonts, no CDNs, no
-# analytics), so the policy can allow only its own files. Trusted Types are
-# enforced too: the code never assigns HTML strings, so any attempt to is blocked.
+# Site only loads its own files, so the CSP can be strict. Trusted Types too,
+# app.js never sets innerHTML.
 CONTENT_SECURITY_POLICY = "; ".join(
     [
         "default-src 'none'",
@@ -173,17 +172,16 @@ class HeatCheckStack(Stack):
             default_root_object="index.html",
             http_version=cloudfront.HttpVersion.HTTP2_AND_3,
             enable_ipv6=True,
-            price_class=cloudfront.PriceClass.PRICE_CLASS_100,  # North America and Europe: the cheapest class
+            price_class=cloudfront.PriceClass.PRICE_CLASS_100,  # NA + Europe, cheapest
             domain_names=[settings.domain_name] if settings.domain_name else None,
             certificate=certificate,
             default_behavior=cloudfront.BehaviorOptions(
-                # Origin Access Control: CloudFront signs its requests, and the bucket
-                # policy CDK adds lets only this distribution read the bucket.
+                # OAC, so only this distribution can read the bucket.
                 origin=origins.S3BucketOrigin.with_origin_access_control(self.site_bucket),
                 viewer_protocol_policy=cloudfront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
                 allowed_methods=cloudfront.AllowedMethods.ALLOW_GET_HEAD,
                 cached_methods=cloudfront.CachedMethods.CACHE_GET_HEAD,
-                # Caches by path only and honors the Cache-Control the Lambda sets on streaks.json.
+                # Respects the Cache-Control the Lambda sets on streaks.json.
                 cache_policy=cloudfront.CachePolicy.CACHING_OPTIMIZED,
                 response_headers_policy=self._security_headers(),
                 compress=True,
@@ -199,8 +197,8 @@ class HeatCheckStack(Stack):
     def _deploy_site(self) -> None:
         """Upload the website on every `cdk deploy` (CI also uploads it on every push).
 
-        data/ is excluded both from the upload and from pruning: data/streaks.json
-        belongs to the Lambda, and the local sample file must never be published.
+        data/ is skipped on upload and on prune. streaks.json comes from the Lambda,
+        the local one is just sample data.
         """
         source = s3deploy.Source.asset(str(FRONTEND), exclude=["data", "data/*"])
         assets = s3deploy.BucketDeployment(
@@ -362,9 +360,9 @@ class HeatCheckStack(Stack):
         )
         errors.add_alarm_action(notify)
 
-        # A dead man's switch: missing data counts as breaching, so this fires when
-        # 24 straight hours pass without a successful run, even if the schedule
-        # itself broke. The schedule runs twice a day, so one failed run never trips it.
+        # Dead man's switch. Missing data counts as breaching, so this fires after 24h
+        # with no successful run (even if the schedule itself breaks). Runs twice a day,
+        # so one bad run won't trip it.
         stale = cloudwatch.Alarm(
             self,
             "DataStale",
@@ -470,7 +468,7 @@ class HeatCheckStack(Stack):
                 actions=["s3:GetObject", "s3:PutObject", "s3:DeleteObject"],
                 resources=[self.site_bucket.arn_for_objects("*")],
             ),
-            # streaks.json belongs to the Lambda; CI must never delete or overwrite it.
+            # streaks.json is the Lambda's, CI shouldn't touch it.
             iam.PolicyStatement(
                 sid="KeepPipelineOutput",
                 effect=iam.Effect.DENY,

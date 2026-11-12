@@ -62,8 +62,7 @@ TEAM_ALIASES: dict[str, str] = {
     "NOH": "NOP",
 }
 
-# Normalized-name aliases for players whose name is spelled differently across
-# sources. Map the variant to the spelling you want to keep.
+# Players whose names are spelled differently across sources (variant -> keep).
 NAME_ALIASES: dict[str, str] = {
     "nicolas-claxton": "nic-claxton",
     "cameron-thomas": "cam-thomas",
